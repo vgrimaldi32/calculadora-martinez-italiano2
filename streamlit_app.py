@@ -22,7 +22,7 @@ else:
     try:
         # Cargar archivos CSV
         df_anses = pd.read_csv("movilidad_anses.csv", sep=";")
-        df_justicia = pd.read_csv("movilidad_martinez_italiano.csv", sep=";")
+        df_justicia = pd.read_csv("movilidad_justicia.csv", sep=";")
 
         # Convertir fechas a datetime
         df_anses["Fecha"] = pd.to_datetime(df_anses["Fecha"], format="%Y-%m")
